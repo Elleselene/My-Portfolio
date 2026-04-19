@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background: #333;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1f1f1f;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Real Name</h1>
+  <p>Computer Engineering Student | Web Developer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Bachelor of Science in Computer Engineering student. I enjoy building systems and applications that solve real-world problems. I have experience in web development, database management, and system design through academic projects.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>PHP & MySQL</li>
+    <li>Basic Python</li>
+    <li>System Development</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>OMPSA School Portal</h3>
+      <p>A system for managing announcements, enrollment, and student data with admin and user interface.</p>
+    </div>
+
+    <div class="card">
+      <h3>Garbage Detection System</h3>
+      <p>Uses YOLO model to detect garbage like bottles, leaves, and cans.</p>
+    </div>
+
+    <!-- Add more here -->
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: https://github.com/yourusername</p>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+</body>
+</html>

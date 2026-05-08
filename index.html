@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaynabelle C. Rioflorido — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- INTRO LOADER -->
+<div id="intro-loader">
+  <div class="intro-grid-bg"></div>
+  <div class="intro-corner tl"></div>
+  <div class="intro-corner tr"></div>
+  <div class="intro-corner bl"></div>
+  <div class="intro-corner br"></div>
+
+  <div class="intro-content">
+    <!-- Logo mark -->
+    <div class="intro-logo-mark">
+      <div class="intro-logo-ring"></div>
+      <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="36,6 66,21 66,51 36,66 6,51 6,21" stroke="#ff6eb4" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <polygon points="36,14 58,26 58,46 36,58 14,46 14,26" stroke="#ff6eb4" stroke-width="1" fill="none" opacity="0.25"/>
+        <text x="36" y="44" font-family="Syne, sans-serif" font-size="22" font-weight="800"
+              fill="#ff6eb4" text-anchor="middle" letter-spacing="-1">JR</text>
+        <circle cx="36" cy="36" r="3" fill="#ff6eb4" opacity="0.0">
+          <animate attributeName="r" values="3;12;3" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+
+    <!-- Name -->
+    <div class="intro-name">
+      Jaynabelle C. <span class="intro-accent">Rioflorido</span>
+    </div>
+
+    <!-- Typewriter label -->
+    <div class="intro-tagline" id="intro-tagline">Initializing...</div>
+
+    <!-- Progress -->
+    <div class="intro-progress-wrap">
+      <div class="intro-progress-bar">
+        <div class="intro-progress-fill" id="intro-progress-fill"></div>
+      </div>
+      <div class="intro-progress-label">
+        <span>Loading portfolio</span>
+        <span class="intro-progress-pct" id="intro-progress-pct">0%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="bgCanvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- STATUS BAR -->
+<div class="status-bar">
+  <div class="status-item" id="statusSection">HOME</div>
+  <div class="progress-bar"><div class="progress-fill" id="scrollProgress"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#home" class="nav-logo"><span>// </span>JCR.dev</a>
+  <div class="nav-right">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-toggle-icon icon-moon">🌙</span>
+      <span class="theme-toggle-icon icon-sun">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-text fade-up">
+      <div class="hero-tag">Available for opportunities</div>
+      <h1 class="hero-name">Jaynabelle<br>C. <span class="accent">Rioflorido</span></h1>
+      <p class="hero-tagline">&gt; An aspiring developer exploring the world of computer systems</p>
+      <p class="hero-desc">Computer Engineering student at Marinduque State University, passionate about web development, system design, and computer networks. Building the future one line at a time.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-photo fade-up" style="transition-delay:0.2s">
+      <div class="photo-wrapper">
+        <div class="photo-ring"></div>
+        <div class="photo-ring-2"></div>
+        <div class="photo-frame">
+          <img src="ID picture.png" alt="Elle">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Who I <span class="dim">Am</span></h2>
+    <div class="about-grid">
+      <div class="about-img-col fade-up">
+        <div class="about-img-box">
+          <div class="about-img-placeholder">👩‍🎓</div>
+          <div class="about-corner tl"></div>
+          <div class="about-corner br"></div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">3+</div>
+          <div class="about-badge-label">Years of<br>Studying Tech</div>
+        </div>
+      </div>
+      <div class="about-text fade-up" style="transition-delay:0.15s">
+        <p>I'm <strong>Jaynabelle C. Rioflorido</strong>, a Computer Engineering student with a deep passion for programming, system design, and the ever-evolving world of technology. I thrive on solving complex problems and turning ideas into functional digital experiences.</p>
+        <p>My journey in tech has shaped me into a developer who values <strong>clean code, thoughtful design, and continuous learning</strong>. Whether it's building web applications, exploring computer networks, or designing system architectures, I approach every challenge with curiosity and dedication.</p>
+        <div class="edu-list">
+          <div class="section-label" style="margin-bottom:20px">Education</div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-year">Present</div>
+            <div><div class="edu-school">Marinduque State University</div><div class="edu-level">BS Computer Engineering</div></div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot" style="background:var(--accent2);box-shadow:0 0 10px var(--accent2)"></div>
+            <div class="edu-year">SHS</div>
+            <div><div class="edu-school">OMPSA — STEM Strand</div><div class="edu-level">Senior High School</div></div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot" style="background:var(--muted);box-shadow:none"></div>
+            <div class="edu-year">JHS</div>
+            <div><div class="edu-school">Our Mother of Perpetual Succor Academy</div><div class="edu-level">Junior High School</div></div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot" style="background:var(--muted);box-shadow:none"></div>
+            <div class="edu-year">Elem</div>
+            <div><div class="edu-school">Torrijos Central School</div><div class="edu-level">Elementary</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">Tech <span class="dim">Stack</span></h2>
+    <div class="skills-grid">
+      <div class="skill-category fade-up">
+        <div class="skill-cat-title">⚙ Core Technical</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">MySQL</span><span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Computer Networks</span><span class="skill-tag">IP Addressing</span>
+          <span class="skill-tag">DHCP / DNS</span><span class="skill-tag">System Analysis</span>
+          <span class="skill-tag">Algorithms</span><span class="skill-tag">Hardware</span>
+        </div>
+      </div>
+      <div class="skill-category fade-up" style="transition-delay:0.1s">
+        <div class="skill-cat-title">🌐 Web Development</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Front-end Dev</span><span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">PHP</span><span class="skill-tag">Firebase Integration</span>
+          <span class="skill-tag">Debugging</span><span class="skill-tag">Optimization</span>
+        </div>
+      </div>
+      <div class="skill-category fade-up" style="transition-delay:0.2s">
+        <div class="skill-cat-title">🛠 Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git & GitHub</span><span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Cisco Packet Tracer</span><span class="skill-tag">Firebase</span>
+          <span class="skill-tag">XAMPP</span><span class="skill-tag">Arduino</span>
+        </div>
+      </div>
+      <div class="skill-category fade-up" style="transition-delay:0.3s">
+        <div class="skill-cat-title">💡 Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem-solving</span><span class="skill-tag">Critical Thinking</span>
+          <span class="skill-tag">Team Collaboration</span><span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Adaptability</span><span class="skill-tag">Continuous Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-label">03 — Projects</div>
+    <h2 class="section-title">Featured <span class="dim">Work</span></h2>
+    <div class="projects-grid">
+      <div class="project-card fade-up">
+        <div class="project-visual project-visual-1">
+          <div class="project-visual-bg project-visual-1"></div>
+          <div class="project-grid-lines"></div>
+          <div class="project-icon">🏫</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span class="project-tag">Web Dev</span><span class="project-tag">Backend</span><span class="project-tag">PHP</span></div>
+          <h3 class="project-title">OMPSA School Website</h3>
+          <p class="project-desc">A comprehensive school website for Our Mother of Perpetual Succor Academy, providing an online hub for students, parents, and staff.</p>
+          <ul class="project-features">
+            <li>Announcement management system</li>
+            <li>Online enrollment integration</li>
+            <li>School information portal</li>
+            <li>Backend-driven content management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-card fade-up" style="transition-delay:0.15s">
+        <div class="project-visual project-visual-2">
+          <div class="project-visual-bg project-visual-2"></div>
+          <div class="project-grid-lines"></div>
+          <div class="project-icon" style="filter:drop-shadow(0 0 24px var(--accent2))">🤖</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag" style="color:var(--accent2);background:var(--accent2-dim);border-color:var(--accent2-dim)">IoT</span>
+            <span class="project-tag">Prototype</span><span class="project-tag">Image Processing</span>
+          </div>
+          <h3 class="project-title">DrainLift: Self-Cleaning Drainage</h3>
+          <p class="project-desc">An innovative prototype leveraging image processing technology for automated garbage detection in drainage systems with real-time monitoring.</p>
+          <ul class="project-features">
+            <li>Image processing garbage detection</li>
+            <li>Web interface for status monitoring</li>
+            <li>Automation & IoT integration concept</li>
+            <li>Real-time alert system</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-wrap">
+    <div class="section-label">04 — Services</div>
+    <h2 class="section-title">What I <span class="dim">Offer</span></h2>
+    <div class="services-grid">
+      <div class="service-card fade-up"><span class="service-icon">⚡</span><div class="service-title">Front-end Development</div><p class="service-desc">Clean, interactive user interfaces built with HTML, CSS, and JavaScript — crafted for performance and visual impact.</p></div>
+      <div class="service-card fade-up" style="transition-delay:0.1s"><span class="service-icon">📱</span><div class="service-title">Responsive Web Design</div><p class="service-desc">Pixel-perfect, mobile-first designs that adapt beautifully across all screen sizes and devices.</p></div>
+      <div class="service-card fade-up" style="transition-delay:0.2s"><span class="service-icon">🔗</span><div class="service-title">Backend Integration</div><p class="service-desc">Basic backend connectivity using PHP and Firebase to bring your web applications to life with real data.</p></div>
+      <div class="service-card fade-up" style="transition-delay:0.3s"><span class="service-icon">🔧</span><div class="service-title">Debugging & Optimization</div><p class="service-desc">Systematic troubleshooting and performance optimization to ensure your website runs smoothly and efficiently.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-label">05 — Contact</div>
+    <h2 class="section-title">Get In <span class="dim">Touch</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <p class="contact-intro">Ready to collaborate or just want to say hello? I'm always open to new opportunities and interesting conversations about tech, development, and beyond.</p>
+        <div class="contact-links">
+          <a href="mailto:jaynabellerioflorido10@gmail.com" class="contact-link"><span class="contact-link-icon">✉</span><div class="contact-link-text"><div class="contact-link-label">Email</div><div class="contact-link-value">jaynabellerioflorido10@gmail.com</div></div></a>
+          <a href="tel:09770386280" class="contact-link"><span class="contact-link-icon">📞</span><div class="contact-link-text"><div class="contact-link-label">Phone</div><div class="contact-link-value">09770386280</div></div></a>
+          <a href="https://facebook.com/JaynabelleRioflorido" target="_blank" class="contact-link"><span class="contact-link-icon">f</span><div class="contact-link-text"><div class="contact-link-label">Facebook</div><div class="contact-link-value">Jaynabelle Rioflorido</div></div></a>
+          <a href="https://github.com/ElleSelene" target="_blank" class="contact-link"><span class="contact-link-icon">⌥</span><div class="contact-link-text"><div class="contact-link-label">GitHub</div><div class="contact-link-value">ElleSelene</div></div></a>
+        </div>
+      </div>
+      <div class="fade-up" style="transition-delay:0.15s">
+        <div class="contact-form">
+          <div class="form-group"><label class="form-label">Your Name</label><input type="text" class="form-input" placeholder="John Doe"></div>
+          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="john@example.com"></div>
+          <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="What would you like to discuss?"></textarea></div>
+          <button class="form-submit"><span>Send Message →</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">© 2025 <span>Jaynabelle C. Rioflorido</span> — Built with passion & code</div>
+  <div class="footer-socials">
+    <a href="https://github.com/ElleSelene" target="_blank" class="footer-social" title="GitHub">⌥</a>
+    <a href="https://facebook.com/JaynabelleRioflorido" target="_blank" class="footer-social" title="Facebook">f</a>
+    <a href="mailto:jaynabellerioflorido10@gmail.com" class="footer-social" title="Email">✉</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
